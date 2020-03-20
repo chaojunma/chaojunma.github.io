@@ -4,8 +4,8 @@ layout: default
 
 {% for post in paginator.posts %}
 <!-- main articles -->
-<h2 class="text-right">
-  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+<h2 class="text-left">
+  <a class="post-link" style="text-decoration:none" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 </h2>
 <h4 class="text-right"><small>{{ post.date | date: "%b %-d, %Y" }}</small></h4>
         {% if post.description %}
