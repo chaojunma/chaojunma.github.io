@@ -14,13 +14,13 @@
 # please change the belowing settings to your own.
 
 # Site settings
-title: Renge
-email: billyfish152@gmail.com
-description: Renge is a Jekyll theme that is designed by Junchao (www.junchaowang.com) and inspired by amination “のんのんびより” and named by one of the Characters "Renge Miyauchi (宮内 れんげ Miyauchi Renge)".
+title: 马明的博客
+email: aizaifenglimian@163.com
+description: 热爱技术分享，擅长微服务框架(springboot、springcloud全家桶)，懂点前端 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.junchaowang.com" # the base hostname & protocol for your site
+url: "https://www.51ufo.cn/" # the base hostname & protocol for your site
 twitter_username:
-github_username:  billyfish152
+github_username:  chaojunma
 
 # Build settings
 markdown: kramdown
