@@ -24,7 +24,9 @@ github地址 [https://github.com/chaojunma/sso-plugin](https://github.com/chaoju
 5. 服务启动后访问http://127.0.0.1:8080/test,由于此时未登录，地址重定向到 http://127.0.0.1/sso/loginPage?webapp=http%3A%2F%2F127.0.0.1%3A8080%2Ftest
    页面如下：
    
-   ![](https://www.51ufo.cn/images/sso-login.png)  
+   <div>
+    <img alt="sso-plugin.jpg" src="/images/sso-login.png"/>
+   </div>
 
 **如何配置**
 
