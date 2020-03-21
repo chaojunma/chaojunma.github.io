@@ -6,7 +6,7 @@ permalink: /about/
 
 
 
-<div margin-top:50px;padding-left:50px;>
+<div style="margin-top:50px;padding-left:50px;">
    个人博客采用 `GitHub Pages` 来编写和发布，记录技术，！您可以在这里看到整个博客的源码 <a href="https://github.com/chaojunma/chaojunma.github.io">GitHub</a>
    <p>
  	关于个人：
