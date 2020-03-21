@@ -7,7 +7,7 @@ group: navigation
 
 
 {% for tag in site.tags %}
-  <h2 class="heading text-right" id="{{ tag[0] }}"><a href="#{{ tag[0] }}">{{ tag[0] }}</a></h2>
+  <h2 class="heading text-right" id="{{ tag[0] }}"><a href="#{{ tag[0] }}" style="text-decoration:none">{{ tag[0] }}</a></h2>
   <ul class="text-right">
     {% assign pages_list = tag[1] %}
 
@@ -15,9 +15,9 @@ group: navigation
       {% if node.title != null %}
         {% if group == null or group == node.group %}
           {% if page.url == node.url %}
-          <li class="list-group-item"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+          <li class="list-group-item"><a href="{{ site.baseurl }}{{node.url}}" class="active" style="text-decoration:none">{{node.title}}</a></li>
           {% else %}
-          <li class="list-group-item"><a href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+          <li class="list-group-item"><a href="{{ site.baseurl }}{{node.url}}" style="text-decoration:none">{{node.title}}</a></li>
           {% endif %}
         {% endif %}
       {% endif %}
