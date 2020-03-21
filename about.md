@@ -4,13 +4,9 @@ title: About
 permalink: /about/
 ---
 
-~~~
-网名: 小明同学
-角色：程序猿、攻城狮
-语言：Java
-~~~
 
-个人博客采用 `github` 来编写和发布，记录技术，！您可以在这里看到整个博客的源码 [editor on GitHub](https://github.com/chaojunma/chaojunma.github.io/edit/master/README.md)。
+
+个人博客采用 `github pages` 来编写和发布，记录技术，！您可以在这里看到整个博客的源码 [GitHub](https://github.com/chaojunma/chaojunma.github.io)。
 
 关于个人：
 
