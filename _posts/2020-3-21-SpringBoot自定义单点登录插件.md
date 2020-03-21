@@ -8,7 +8,7 @@ tags: SpringBoot sso
 
 
 <div style="margin:30px 0px;">
-   github地址 [https://github.com/chaojunma/sso-plugin](https://github.com/chaojunma/sso-plugin)
+   github地址 <a href="https://github.com/chaojunma/sso-plugin">https://github.com/chaojunma/sso-plugin</a>
 </div>
 
 **应用如下**
