@@ -6,10 +6,10 @@ categories: 微服务
 tags: SpringBoot sso
 --- 
 
-# sso-plugin
-SpringBoot自定义单点登录插件
 
-github地址 [https://github.com/chaojunma/sso-plugin](https://github.com/chaojunma/sso-plugin)
+<div style="margin:30px 0px;">
+   github地址 [https://github.com/chaojunma/sso-plugin](https://github.com/chaojunma/sso-plugin)
+</div>
 
 **应用如下**
 + sso-sdk(单点登录插件，sso-server和sso-client需要引用此依赖)
@@ -24,8 +24,8 @@ github地址 [https://github.com/chaojunma/sso-plugin](https://github.com/chaoju
 5. 服务启动后访问http://127.0.0.1:8080/test,由于此时未登录，地址重定向到 http://127.0.0.1/sso/loginPage?webapp=http%3A%2F%2F127.0.0.1%3A8080%2Ftest
    页面如下：
    
-   <div style="width:800px;height:500px;margin:50px auto">
-    <img alt="sso-plugin.jpg" src="/images/sso-login.png" width="800" height="500"/>
+   <div style="width:800px;height:480px;margin:50px auto">
+    <img alt="sso-plugin.jpg" src="/images/sso-login.png" width="800" height="480"/>
    </div>
 
 **如何配置**
