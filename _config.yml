@@ -24,6 +24,6 @@ github_username:  chaojunma
 
 # Build settings
 markdown: kramdown
-paginate: 3
+paginate: 5
 gems: [jekyll-paginate]
 paginate_path: "/page/:num"
