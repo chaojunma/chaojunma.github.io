@@ -12,6 +12,7 @@ tags: SpringBoot SpringCloud Nacos Seata
 </div>
 
 **应用介绍**
+
 + springcloud-seata-common(公共包)
 + springcloud-seata-account(用户服务，用于账户支付)
 + springcloud-seata-storage(库存服务，用于库存管理)
@@ -19,11 +20,12 @@ tags: SpringBoot SpringCloud Nacos Seata
 
 
 **目标介绍**
+
 本文，我们将通过一个实战案例来具体介绍Seata的使用方式，我们将模拟一个简单的用户购买商品下单场景，创建4个子工程，分别是 springcloud-seata-order（下单服务）、springcloud-seata-storage（库存服务）、springcloud-seata-account（支付服务）和 springcloud-seata-common(公共包)，具体流程图如图：
 
 <div style="width:770px;height:450px;margin:50px 0px">
    <img alt="seata-flow.png" src="/images/seata-flow.png" width="770" height="450"/>
-</div
+</div>
 
 **环境准备**
 
@@ -389,6 +391,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 ````
 
 ***springcloud-seata-order订单服务数据源配置类如下***
+
 ````
 @Configuration
 public class DataSourceProxyConfig {
@@ -520,7 +523,7 @@ spring.cloud.alibaba.seata.tx-service-group ：这里是我们之前在修改 Se
 
 <div style="width:770px;height:200px;margin:50px 0px">
    <img alt="seata-postman.png" src="/images/seata-postman.png" width="770" height="200"/>
-</div
+</div>
 
 调用之前数据库数据如下：
 
