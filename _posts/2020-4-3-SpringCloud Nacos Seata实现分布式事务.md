@@ -311,6 +311,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 **代码实战**
 
 由于本示例代码偏多，这里仅介绍核心代码和一些需要注意的代码，其余代码可以访问配套的代码仓库获取。
+
 ***父工程 springcloud-seata 依赖 pom.xml 文件如下***
 ````
 <dependencies>
@@ -467,6 +468,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
 这里采用feigin客户端调用支付和库存服务，并且需要方法上增加全局事务的注解@GlobalTransactional
 
 ***配置文件***
+
 接下来我们需要在resources目录下创建registry.conf配置文件，和seata-server conf目录下registry.conf内容一致，如下：
 
 ````
@@ -527,45 +529,45 @@ spring.cloud.alibaba.seata.tx-service-group ：这里是我们之前在修改 Se
 
 调用之前数据库数据如下：
 
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-account1.png" src="/images/seata-account1.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-account1.png" src="/images/seata-account1.png" width="908" height="220"/>
 </div>
 
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-stock1.png" src="/images/seata-stock1.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-stock1.png" src="/images/seata-stock1.png" width="908" height="220"/>
 </div>
 
 运行结果如下：
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-result1.png" src="/images/seata-result1.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-result1.png" src="/images/seata-result1.png" width="908" height="220"/>
 </div>
 
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-account2.png" src="/images/seata-account2.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-account2.png" src="/images/seata-account2.png" width="908" height="220"/>
 </div>
 
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-stock2.png" src="/images/seata-stock2.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-stock2.png" src="/images/seata-stock2.png" width="908" height="220"/>
 </div>
 
 操作成功以后，库存和账户余额都有相应的减少
 
 下面我们来测试一下异常情况：
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-postman2.png" src="/images/seata-postman2.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-postman2.png" src="/images/seata-postman2.png" width="908" height="220"/>
 </div>
 
 返回结果如下：
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-result2.png" src="/images/seata-result2.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-result2.png" src="/images/seata-result2.png" width="908" height="220"/>
 </div>
 
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-account3.png" src="/images/seata-account3.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-account3.png" src="/images/seata-account3.png" width="908" height="220"/>
 </div>
 
-<div style="width:908px;height:172px;margin:50px 0px">
-   <img alt="seata-stock3.png" src="/images/seata-stock3.png" width="908" height="172"/>
+<div style="width:908px;height:220px;margin:50px 0px">
+   <img alt="seata-stock3.png" src="/images/seata-stock3.png" width="908" height="220"/>
 </div>
 
 库存和余额并未较少，说明全局分布式事务已生效，控制台打印如下：
