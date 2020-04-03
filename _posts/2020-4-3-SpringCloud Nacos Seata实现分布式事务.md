@@ -30,6 +30,7 @@ tags: SpringCloud Nacos Seata
 **环境准备**
 
 ***Seata环境安装及配置***
+
 在本次实战中，我们使用Nacos做为服务中心和配置中心，Nacos部署请自行查阅文档，这里不再赘述。
 接下来我们需要部署Seata的Server端，下载地址为：https://github.com/seata/seata/releases ，建议选择最新版本下载，目前笔者看到的最新版本为 v1.0.0 ，下载 seata-server-1.1.0.zip 解压后，打开 conf 文件夹，我们需对其中的一些配置做出修改。
 
