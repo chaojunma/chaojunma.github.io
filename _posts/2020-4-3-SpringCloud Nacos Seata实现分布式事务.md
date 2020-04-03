@@ -3,7 +3,7 @@ layout: post
 title: "SpringCloud Nacos Seata实现分布式事务"
 date: 2020-4-3 
 categories: 微服务 分布式
-tags: SpringBoot SpringCloud Nacos Seata
+tags: SpringCloud Nacos Seata
 --- 
 
 
@@ -143,7 +143,7 @@ sh nacos-config.sh 192.168.227.1 #Nacos服务地址
 执行成功后可以打开Nacos的控制台，在配置列表中，可以看到初始化了很多 Group 为 SEATA_GROUP 的配置，如图：
 <div style="width:770px;height:250px;margin:50px 0px">
    <img alt="seata-nacos.png" src="/images/seata-nacos.png" width="770" height="250"/>
-</div
+</div>
 
 初始化成功后，可以切换到bin目录下双击seata-server.bat（Windows）或执行sh seata-server.sh -p 8091 -m file（Linux下）启动seata-server服务
 
