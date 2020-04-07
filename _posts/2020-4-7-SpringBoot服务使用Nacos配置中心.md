@@ -60,5 +60,24 @@ spring:
 
 启动服务正常，从nacos配置中心读取相关配置
 
+**数据持久化**
+
+1.安装数据库，版本要求：5.6.5+
+2.初始化mysql数据库，数据库初始化文件：nacos-mysql.sql
+3.修改conf/application.properties文件，增加支持mysql数据源配置(目前只支持mysql)，添加mysql数据源的url、用户名和密码
+
+配置如下：
+
+````
+spring.datasource.platform=mysql
+db.num=1
+db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+db.user=root
+db.password=123456
+````
+
+
+
+
 
 
