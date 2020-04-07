@@ -3,7 +3,7 @@ layout: post
 title: "SpringCloud Nacos Seata实现分布式事务"
 date: 2020-4-3 
 categories: 微服务 分布式
-tags: SpringCloud Nacos Seata
+tags: SpringCloudAlibaba Nacos Seata
 --- 
 
 
