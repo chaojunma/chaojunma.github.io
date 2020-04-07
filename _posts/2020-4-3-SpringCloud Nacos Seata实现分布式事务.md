@@ -32,7 +32,7 @@ tags: SpringCloud Nacos Seata
 ***Seata环境安装及配置***
 
 在本次实战中，我们使用Nacos做为服务中心和配置中心，Nacos部署请自行查阅文档，这里不再赘述。
-接下来我们需要部署Seata的Server端，下载地址为：https://github.com/seata/seata/releases ，建议选择最新版本下载，目前笔者看到的最新版本为 v1.0.0 ，下载 seata-server-1.1.0.zip 解压后，打开 conf 文件夹，我们需对其中的一些配置做出修改。
+接下来我们需要部署Seata的Server端，下载地址为：https://github.com/seata/seata/releases ，建议选择最新版本下载，本文用到的版本为 v1.1.0 ，下载 seata-server-1.1.0.zip 解压后，打开 conf 文件夹，我们需对其中的一些配置做出修改。
 
 ````
 registry {
@@ -514,7 +514,7 @@ spring:
       seata:
         tx-service-group: fsp_tx_group
 ````
-pring.cloud.nacos.config.group ：这里的 Group 是 SEATA_GROUP ，也就是我们前面在使用 nacos-config.sh 生成 Nacos 的配置时生成的配置，它的 Group 是 SEATA_GROUP。
+spring.cloud.nacos.config.group ：这里的 Group 是 SEATA_GROUP ，也就是我们前面在使用 nacos-config.sh 生成 Nacos 的配置时生成的配置，它的 Group 是 SEATA_GROUP。
 
 spring.cloud.alibaba.seata.tx-service-group ：这里是我们之前在修改 Seata Server 端配置文件 nacos-config.txt 时里面配置的 service.vgroup_mapping.${your-service-gruop}=default 中间的 ${your-service-gruop} 。这两处配置请务必一致，否则在启动工程后会一直报错 no available server to connect 
 
