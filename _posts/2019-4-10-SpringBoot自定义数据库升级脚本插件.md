@@ -30,7 +30,7 @@ tags: SpringBoot MySQL
 </dependency>
 <dependency>
 	<groupId>com.gouuse</groupId>
-	<artifactId>datahub-i18n</artifactId>
+	<artifactId>datahub-upgrade</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ````
