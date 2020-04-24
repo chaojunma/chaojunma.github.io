@@ -9,10 +9,13 @@ tags: SpringCloud WebFlux Swagger2
 本文主要展示一下如何使用Spring Cloud Gateway支持Swagger2
 
 ### maven配置
+
  
 在pom.xml文件中添加如下依赖：
 
+
 ```
+
 <properties>
     <swagger.version>3.0.0-SNAPSHOT</swagger.version>
 </properties>
@@ -39,9 +42,12 @@ tags: SpringCloud WebFlux Swagger2
     <artifactId>springfox-swagger-ui</artifactId>
     <version>${swagger.version}</version>
 </dependency>
+
 ```
 
+
 swagger.version目前是3.0.0-SNAPSHOT，因而没有发布到maven官方仓库里头，需要从jcenter-snapshots中拉取
+
 
 ```
 <repositories>
@@ -54,6 +60,8 @@ swagger.version目前是3.0.0-SNAPSHOT，因而没有发布到maven官方仓库�
 ```
 
 ### swagger配置
+
+
 
 ```
 @Configuration
@@ -75,9 +83,13 @@ public class SwaggerConfig {
 }
 ```
 
+
 由于支持了WebFlux，所以之前的@EnableSwagger2就移除掉了，变为@EnableSwagger2WebMvc以及@EnableSwagger2WebFlux，这里使用的是@EnableSwagger2WebFlux
 
+
 ### application.yml配置
+
+
 
 ```
 #swagger开关
