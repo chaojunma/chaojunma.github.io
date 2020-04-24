@@ -15,7 +15,6 @@ tags: SpringCloud WebFlux Swagger2
 
 
 ```
-
 <properties>
     <swagger.version>3.0.0-SNAPSHOT</swagger.version>
 </properties>
@@ -83,9 +82,7 @@ public class SwaggerConfig {
 }
 ```
 
-
-由于支持了WebFlux，所以之前的@EnableSwagger2就移除掉了，变为@EnableSwagger2WebMvc以及@EnableSwagger2WebFlux，这里使用的是@EnableSwagger2WebFlux
-
+由于支持了WebFlux，所以之前的@EnableSwagger2就移除掉了，变为`@EnableSwagger2WebFlux`
 
 ### application.yml配置
 
