@@ -7,9 +7,9 @@
 
     {% include header.html %}
 
-	<div id="ËÑË÷Çø">
-      <input type="text" id="ËÑË÷ÊäÈë" placeholder="ËÑË÷...">
-      <ul id="ËÑË÷½á¹û"></ul>
+	<div id="æœç´¢åŒº">
+      <input type="text" id="æœç´¢è¾“å…¥" placeholder="æœç´¢...">
+      <ul id="æœç´¢ç»“æœ"></ul>
     </div>
 
 
@@ -27,11 +27,11 @@
 
 	<script>
       window.simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('ËÑË÷ÊäÈë'),
-        resultsContainer: document.getElementById('ËÑË÷½á¹û'),
-        json: '{{ site.baseurl }}/È«ÎÄË÷Òı.json',
+        searchInput: document.getElementById('æœç´¢è¾“å…¥'),
+        resultsContainer: document.getElementById('æœç´¢ç»“æœ'),
+        json: '{{ site.baseurl }}/å…¨æ–‡ç´¢å¼•.json',
         searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-        noResultsText: 'Î´ÕÒµ½Ïà¹ØÎÄÕÂ',
+        noResultsText: 'æœªæ‰¾åˆ°ç›¸å…³æ–‡ç« ',
         limit: 100,
         fuzzy: false,
         exclude: ['Welcome']
