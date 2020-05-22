@@ -1,20 +1,40 @@
 <!-- footer -->
-<div class="col-xs-10 span9">
-  <p class="text-center" style="margin:30px 0px">
-    ©2020 马明的技术博客
-	<span id="busuanzi_container_site_pv" style="display: inline;">
-            <span id="busuanzi_container_site_pv">
-				本站总访问量<span id="busuanzi_value_site_pv" style="color:#3391D1;padding:0px 5px;"></span>次
-			</span>
+<footer>
+	<div class="col-xs-10 span9">
+	  <p class="text-center" style="margin:30px 0px">
+		©2020 马明的技术博客
+		<span id="busuanzi_container_site_pv" style="display: inline;">
+				<span id="busuanzi_container_site_pv">
+					本站总访问量<span id="busuanzi_value_site_pv" style="color:#3391D1;padding:0px 5px;"></span>次
+				</span>
 
-			<span id="busuanzi_container_site_uv">
-			  本站访客数<span id="busuanzi_value_site_uv" style="color:#3391D1;padding:0px 5px;"></span>人次
-			</span>
-    </span>
-	<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278708418'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1278708418%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-  </p>
-</div>
-</div>
-</div>
+				<span id="busuanzi_container_site_uv">
+				  本站访客数<span id="busuanzi_value_site_uv" style="color:#3391D1;padding:0px 5px;"></span>人次
+				</span>
+		</span>
+		<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278708418'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1278708418%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	  </p>
+	</div>
+	</div>
+	</div>
+</footer>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
+</div>
+
+<link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
+
+<script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
