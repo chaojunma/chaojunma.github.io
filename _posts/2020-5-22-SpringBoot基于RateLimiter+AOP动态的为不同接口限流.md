@@ -73,15 +73,15 @@ public @interface RateLimit {
 @Data
 @Builder
 public class Result {
-	
+
 	// 状态码
-   private Integer code; //
-	
-    //描述
-	private String message; 
-	
-	//返回数据
-	private Object data; 
+	private Integer code; //
+
+	// 描述
+	private String message;
+
+	// 返回数据
+	private Object data;
 
 }
 ````
@@ -181,7 +181,7 @@ public class RateLimitController {
 }
 ````
 
-启动SpringBoot项目，在浏览器中请求http://localhost:8080/test/limit接口
+启动SpringBoot项目，在浏览器中请求`http://localhost:8080/test/limit`接口
 
 正常返回如下：
 
@@ -195,5 +195,5 @@ public class RateLimitController {
 {"code":500,"message":"系统繁忙！"}
 ````
 
-此时说明限流起到作用了!!!
+`此时说明限流起到作用了!!!`
 
