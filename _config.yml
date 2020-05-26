@@ -23,6 +23,7 @@ twitter_username:
 github_username:  chaojunma
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 paginate: 5
 gems: [jekyll-paginate]
