@@ -23,11 +23,8 @@ twitter_username:
 github_username:  chaojunma
 
 # Build settings
-highlighter: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+highlighter: pygments
 paginate: 5
 gems: [jekyll-paginate]
 paginate_path: "/page/:num"
