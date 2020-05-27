@@ -37,7 +37,7 @@ RateLimiter是guava提供的基于令牌桶算法的实现类，可以非常简�
 
 自定义注解
 
-~~~java
+````
 @Documented
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
@@ -64,7 +64,7 @@ public @interface RateLimit {
 	TimeUnit timeOutUnit() default TimeUnit.SECONDS;
 
 }
-~~~
+````
 
 
 封装定义返回结果
