@@ -12,7 +12,7 @@ RateLimiter是guava提供的基于令牌桶算法的实现类，可以非常简�
 导入相关依赖包
 
 
-````
+```xml
 <!--引入SpringBoot的Web模块-->
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -33,7 +33,7 @@ RateLimiter是guava提供的基于令牌桶算法的实现类，可以非常简�
     <artifactId>guava</artifactId>
     <version>20.0</version>
 </dependency>
-````
+```
 
 自定义注解
 
