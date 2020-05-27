@@ -69,7 +69,7 @@ public @interface RateLimit {
 
 封装定义返回结果
 
-````
+```java
 @Data
 @Builder
 public class Result {
@@ -84,11 +84,11 @@ public class Result {
 	private Object data;
 
 }
-````
+```
 
 AOP实现
 
-````
+```java
 @Slf4j
 @Aspect
 @Component
@@ -164,11 +164,11 @@ public class RateLimitAspect {
 	}
 
 }
-````
+```
 
 Controller控制器
 
-````
+```java
 @RestController
 public class RateLimitController {
 
@@ -179,21 +179,21 @@ public class RateLimitController {
 	}
 	
 }
-````
+```
 
 启动SpringBoot项目，在浏览器中请求`http://localhost:8080/test/limit`接口
 
 正常返回如下：
 
-````
+```json
 {"code":200,"message":"success","data":null}
-````
+```
 
 操作频繁返回如下：
 
-````
+```json
 {"code":500,"message":"系统繁忙！"}
-````
+```
 
 `此时说明限流起到作用了!!!`
 
