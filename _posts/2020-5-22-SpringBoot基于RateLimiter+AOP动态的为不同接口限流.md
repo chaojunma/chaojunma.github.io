@@ -9,7 +9,8 @@ tags: SpringBoot AOP 限流
 
 RateLimiter是guava提供的基于令牌桶算法的实现类，可以非常简单的完成限流特技，并且根据系统的实际情况来调整生成token的速率。以下为基于SpringBoot+AOP实现对不同接口的限流。
 
-    {% prism ruby %}
+
+{% prism ruby %}
     def show
     @widget = Widget(params[:id])
     respond_to do |format|
@@ -17,7 +18,7 @@ RateLimiter是guava提供的基于令牌桶算法的实现类，可以非常简�
         format.json { render json: @widget }
     end
     end
-    {% endprism %}
+{% endprism %}
 
 
 
