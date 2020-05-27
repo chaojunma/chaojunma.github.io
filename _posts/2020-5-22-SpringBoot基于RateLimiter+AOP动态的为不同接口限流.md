@@ -181,7 +181,7 @@ public class RateLimitController {
 }
 ```
 
-启动SpringBoot项目，在浏览器中请求<span class="markdown-tag">http://localhost:8080/test/limit<span>接口
+启动SpringBoot项目，在浏览器中请求<span class="markdown-tag">http://localhost:8080/test/limit</span>接口
 
 正常返回如下：
 
@@ -195,5 +195,5 @@ public class RateLimitController {
 {"code":500,"message":"系统繁忙！"}
 ````
 
-<span class="markdown-tag">此时说明限流起到作用了!!!<span>
+<span class="markdown-tag">此时说明限流起到作用了!!!</span>
 
