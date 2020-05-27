@@ -24,7 +24,7 @@ github_username:  chaojunma
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 paginate: 5
 gems: [jekyll-paginate]
 paginate_path: "/page/:num"
