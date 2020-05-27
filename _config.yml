@@ -23,7 +23,7 @@ twitter_username:
 github_username:  chaojunma
 
 # Build settings
-markdown: rdiscount
+markdown: kramdown
 paginate: 5
 gems: [jekyll-paginate]
 paginate_path: "/page/:num"
