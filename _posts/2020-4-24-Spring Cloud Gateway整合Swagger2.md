@@ -14,7 +14,7 @@ tags: SpringCloud WebFlux Swagger2
 在pom.xml文件中添加如下依赖：
 
 
-```
+```xml
 <properties>
     <swagger.version>3.0.0-SNAPSHOT</swagger.version>
 </properties>
@@ -48,7 +48,7 @@ tags: SpringCloud WebFlux Swagger2
 swagger.version目前是3.0.0-SNAPSHOT，因而没有发布到maven官方仓库里头，需要从jcenter-snapshots中拉取
 
 
-```
+```xml
 <repositories>
     <repository>
         <id>jcenter-snapshots</id>
@@ -62,7 +62,7 @@ swagger.version目前是3.0.0-SNAPSHOT，因而没有发布到maven官方仓库�
 
 
 
-```
+```java
 @Configuration
 @EnableSwagger2WebFlux
 public class SwaggerConfig {
@@ -88,7 +88,7 @@ public class SwaggerConfig {
 
 
 
-```
+```yaml
 #swagger开关
 swagger:
   enabled: true

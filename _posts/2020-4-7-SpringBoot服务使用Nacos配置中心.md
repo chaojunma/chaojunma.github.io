@@ -26,19 +26,19 @@ Windows下双击startup.cmd文件启动
 
 1、在需要继承的SpringBoot服务中添加如下依赖
 
-````
+```xml
 <dependency>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
     <version>${latest.version}</version>
 </dependency>
-````
+```
 
 注意：版本 0.2.x.RELEASE 对应的是 Spring Boot 2.x 版本，版本 0.1.x.RELEASE 对应的是 Spring Boot 1.x 版本。我的是spring Boot 2.x 以上的所以选择 0.2.1.RELEASE版本的
 
 2.添加配置bootstrap.yml配置文件，内容如下
 
-````
+```yaml
 spring:
     application:
         name: api-i18n
@@ -49,7 +49,7 @@ spring:
                 group: DEFAULT_GROUP
                 prefix: ${spring.appliction.name} #可以不写，默认为${spring.appliction.name}
                 file-extension: yaml
-````
+```
 
 3、按照上面的配置规则在Nacos中添加相关配置，如下：
 
@@ -68,13 +68,13 @@ spring:
 
 配置如下：
 
-````
+```properties 
 spring.datasource.platform=mysql
 db.num=1
 db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
 db.user=root
 db.password=123456
-````
+```
 
 
 
