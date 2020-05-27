@@ -34,7 +34,7 @@ tags: Nacos Seata SpringCloudAlibaba
 在本次实战中，我们使用Nacos做为服务中心和配置中心，Nacos部署请自行查阅文档，这里不再赘述。
 接下来我们需要部署Seata的Server端，下载地址为：https://github.com/seata/seata/releases ，建议选择最新版本下载，本文用到的版本为 v1.1.0 ，下载 seata-server-1.1.0.zip 解压后，打开 conf 文件夹，我们需对其中的一些配置做出修改。
 
-````
+```json
 registry {
   type = "nacos"
 
@@ -55,12 +55,12 @@ config {
   }
 }
 
-````
+```
 这里我们选择使用Nacos作为服务中心和配置中心，这里做出对应的配置，同时可以看到Seata的注册服务支持：file 、nacos 、eureka、redis、zk、consul、etcd3、sofa等方式，配置支持：file、nacos 、apollo、zk、consul、etcd3等方式。
 
 接下来我们修改seata根目录下的config.txt文件如下：
 
-````
+```properties
 transport.type=TCP
 transport.server=NIO
 transport.heartbeat=true
@@ -127,20 +127,20 @@ metrics.enabled=false
 metrics.registryType=compact
 metrics.exporterList=prometheus
 metrics.exporterPrometheusPort=9898
-````
+```
 最主要的几个配置如下：
-````
+```properties
 service.vgroup_mapping.fsp_tx_group=default #指定事务的分组
 store.mode=db #改为数据库存储方式
 store.db.url=jdbc:mysql://192.168.227.1:3306/seata-server?useUnicode=true #数据库连接地址
 store.db.user=root #数据库用户名
 store.db.password=123456 数据库密码
-````
+```
 因为我们是使用的Nacos作为配置中心，所以这里需要通过Git Bash先执行脚本来初始化Nacos的相关配置，命令如下：
-````
+```shell
 cd conf
 sh nacos-config.sh 192.168.227.1 #Nacos服务地址
-````
+```
 执行成功后可以打开Nacos的控制台，在配置列表中，可以看到初始化了很多 Group 为 SEATA_GROUP 的配置，如图：
 <div style="width:770px;height:250px;margin:50px 0px">
    <img alt="seata-nacos.png" src="/images/seata-nacos.png" width="770" height="250"/>
@@ -153,7 +153,7 @@ sh nacos-config.sh 192.168.227.1 #Nacos服务地址
 ***数据库初始化***
 
 创建数据库seata-server，初始化脚本如下：
-````
+```sql
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -218,10 +218,10 @@ CREATE TABLE `lock_table`  (
 
 SET FOREIGN_KEY_CHECKS = 1;
 
-````
+```
 
 创建数据库seata-account，初始化脚本如下：
-````
+```sql
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -239,10 +239,10 @@ CREATE TABLE `account`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
-````
+```
 创建数据库seata-storage，初始化脚本如下：
 
-````
+```sql
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -261,9 +261,9 @@ CREATE TABLE `storage`  (
 
 SET FOREIGN_KEY_CHECKS = 1;
 
-````
+```
 创建数据库seata-order，初始化脚本如下：
-````
+```sql
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -282,9 +282,9 @@ CREATE TABLE `orders`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 36 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
-````
+```
 接下来需要在数据库seata-account、seata-storage、seata-order中分别创建一张表，脚本如下：
-````
+```sql
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -307,14 +307,14 @@ CREATE TABLE `undo_log`  (
 
 SET FOREIGN_KEY_CHECKS = 1;
 
-````
+```
 
 **代码实战**
 
 由于本示例代码偏多，这里仅介绍核心代码和一些需要注意的代码，其余代码可以访问配套的代码仓库获取。
 
 ***父工程 springcloud-seata 依赖 pom.xml 文件如下***
-````
+```xml
 <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -390,11 +390,11 @@ SET FOREIGN_KEY_CHECKS = 1;
             </dependency>
         </dependencies>
     </dependencyManagement>
-````
+```
 
 ***springcloud-seata-order订单服务数据源配置类如下***
 
-````
+```java
 @Configuration
 public class DataSourceProxyConfig {
 
@@ -410,11 +410,11 @@ public class DataSourceProxyConfig {
         return new DataSourceProxy(druidDataSource);
     }
 }
-````
+```
 注意：这里使用的代理数据源，所以需要在启动类上面添加@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)注解，排除原有数据源
 
 ***springcloud-seata-order订单服务主要业务逻辑代码如下***
-````
+```java
 @Slf4j
 @Service
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements OrderService {
@@ -465,14 +465,14 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     }
 }
 
-````
+```
 这里采用feigin客户端调用支付和库存服务，并且需要方法上增加全局事务的注解@GlobalTransactional
 
 ***配置文件***
 
 接下来我们需要在resources目录下创建registry.conf配置文件，和seata-server conf目录下registry.conf内容一致，如下：
 
-````
+```json
 registry {
   type = "nacos"
 
@@ -492,9 +492,9 @@ config {
     group = "SEATA_GROUP"
   }
 }
-````
+```
 在 bootstrap.yml 中的配置如下：
-````
+```yaml
 spring:
   application:
     name: springcloud-seata-order
@@ -513,7 +513,7 @@ spring:
     alibaba:
       seata:
         tx-service-group: fsp_tx_group
-````
+```
 spring.cloud.nacos.config.group ：这里的 Group 是 SEATA_GROUP ，也就是我们前面在使用 nacos-config.sh 生成 Nacos 的配置时生成的配置，它的 Group 是 SEATA_GROUP。
 
 spring.cloud.alibaba.seata.tx-service-group ：这里是我们之前在修改 Seata Server 端配置文件 nacos-config.txt 时里面配置的 service.vgroup_mapping.${your-service-gruop}=default 中间的 ${your-service-gruop} 。这两处配置请务必一致，否则在启动工程后会一直报错 no available server to connect 

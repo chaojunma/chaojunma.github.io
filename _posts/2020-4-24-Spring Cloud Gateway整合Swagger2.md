@@ -74,7 +74,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-		.apis(RequestHandlerSelectors.basePackage("com.gouuse.datahub.gateway.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.gouuse.datahub.gateway.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .enable(enabled);
