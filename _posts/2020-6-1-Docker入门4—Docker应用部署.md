@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker入门4—Docker应用部署"
+title: "Docker应用部署"
 date: 2020-6-1
 categories: 运维
 tags: Docker 
