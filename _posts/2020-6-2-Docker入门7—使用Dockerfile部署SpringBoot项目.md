@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Docker中使用Dockerfile部署springboot项目"
+title: "使用Dockerfile部署SpringBoot项目"
 date: 2020-6-2
 categories: 运维
-tags: Docker 
+tags: Docker SpringBoot
 --- 
 
 ### 准备jar包和Dockerfile文件
