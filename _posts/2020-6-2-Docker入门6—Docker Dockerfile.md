@@ -28,6 +28,7 @@ ADD source_dir/file dest_dir/file | 将宿主机的文件复制到容器内，�
 COPY source_dir/file dest_dir/file | 和ADD相似，但是如果有压缩文件并不能解压 |
 WORKDIR path_dir | 设置工作目录 |
 
+
 步骤：
 
 （1）创建目录
