@@ -15,7 +15,7 @@ docker pull registry
 ```
 docker run -di --name=registry -p 5000:5000 registry
 ```
-（3）打开浏览器 输入地址 [http://192.168.192.10:5000//v2/_catalog][1] 看到`{"repositories":[]}` 表示私有仓库搭建成功并且内容为空
+（3）打开浏览器 输入地址 [http://192.168.192.10:5000/v2/_catalog][1] 看到`{"repositories":[]}` 表示私有仓库搭建成功并且内容为空
 
 （4）修改daemon.json
 ```
