@@ -8,6 +8,7 @@ tags: Docker
 
 ### 什么是Dockerfile
 
+
 Dockerfile是由一系列命令和参数构成的脚本，这些命令应用于基础镜像并最终创建一个新的镜像。
 
 1、对于开发人员：可以为开发团队提供一个完全一致的开发环境；
@@ -39,7 +40,7 @@ mkdir –p /usr/local/dockerjdk8
 
 （3）创建文件Dockerfile `vi Dockerfile`
 
-```shell
+```
 #依赖镜像名称和ID
 FROM centos:7
 #指定镜像创建者信息
@@ -58,7 +59,7 @@ ENV PATH $JAVA_HOME/bin:$PATH
 ```
 （4）执行命令构建镜像
 ```
-docker build -t='jdk1.8' .
+docker build -t 镜像名称:TAG .
 ```
 注意后边的空格和点，不要省略
 
