@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker Dockerfile"
+title: "Docker利用Dockerfile构建镜像"
 date: 2020-6-2
 categories: 运维
 tags: Docker 
@@ -29,6 +29,7 @@ ADD source_dir/file dest_dir/file | 将宿主机的文件复制到容器内，�
 COPY source_dir/file dest_dir/file | 和ADD相似，但是如果有压缩文件并不能解压 |
 WORKDIR path_dir | 设置工作目录 |
 
+### 使用脚本创建镜像
 
 步骤：
 
