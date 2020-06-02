@@ -45,7 +45,7 @@ mkdir –p /usr/local/dockerjdk8
 #依赖镜像名称和ID
 FROM centos:7
 #指定镜像创建者信息
-MAINTAINER ITCAST
+MAINTAINER mark
 #切换工作目录
 WORKDIR /usr
 RUN mkdir  /usr/local/java
