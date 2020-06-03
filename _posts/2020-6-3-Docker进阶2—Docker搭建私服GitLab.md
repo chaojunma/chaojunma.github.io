@@ -13,7 +13,7 @@ gitlab就相当于我们自己内网搭建的git服务，相当于公司内的gi
 
 ```
 # gitlab-ce为稳定版本，后面不填写版本则默认pull最新latest版本
-$ docker pull gitlab/gitlab-ce
+docker pull gitlab/gitlab-ce
 ```
 
 ### 创建宿主机的数据目录
@@ -46,7 +46,6 @@ vim /home/gitlab/config/gitlab.rb
 ```
 
 ```
-# 配置http协议所使用的访问地址,不加端口号默认为80
 external_url 'http://192.168.192.10'
 ```
 
@@ -67,8 +66,7 @@ https: false
 然后重启容器
 
 ```
-# 重启gitlab容器
-$ docker restart 容器名称（或者容器ID）
+docker restart 容器名称（或者容器ID）
 ```
 
 查看容器启动日志
