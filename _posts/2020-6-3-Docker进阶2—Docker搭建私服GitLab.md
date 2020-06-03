@@ -38,10 +38,10 @@ docker run \
 gitlab/gitlab-ce
 ```
 
-按上面的方式，gitlab容器运行没问题，但在gitlab上创建项目的时候，生成项目的URL访问地址是按容器的hostname来生成的，也就是容器的id。作为gitlab服务器，我们需要一个固定的URL访问地址，于是需要配置gitlab.rb（宿主机路径：/home/gitlab/config/gitlab.rb）。
+按上面的方式，gitlab容器运行没问题，但在gitlab上创建项目的时候，生成项目的URL访问地址是按容器的hostname来生成的，也就是容器的id。作为gitlab服务器，我们需要一个固定的URL访问地址，于是需要配置gitlab.rb（宿主机路径：/mnt/gitlab/etc/gitlab.rb）。
 
 ```
-vim /home/gitlab/config/gitlab.rb
+vim /mnt/gitlab/etc/gitlab.rb
 ```
 
 ```
