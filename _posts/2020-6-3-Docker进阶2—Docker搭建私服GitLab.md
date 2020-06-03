@@ -50,6 +50,8 @@ external_url 'http://192.168.192.10'
 
 修改/mnt/gitlab/data/gitlab-rails/etc/gitlab.yml
 
+找到关键字 * ## Web server settings * 
+
 将host的值改成映射的外部主机ip地址和端口，这里会显示在gitlab克隆地址
 
 ```
