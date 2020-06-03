@@ -7,6 +7,8 @@ tags: Docker Maven
 --- 
 
 
+### 环境搭建
+
 （1）拉取私有仓库镜像
 
 ```
@@ -78,3 +80,12 @@ docker exec -it 容器名称 (或者容器ID) /bin/bash
 </div>
 
 根据提示修改登录密码并完成登录
+
+
+### 创建私服仓库
+创建仓库，点击Create repository,然后选择maven2(hosted)然后输入仓库名称（nexus-release）。在version policy中选择这个仓库的类型，这里选择release,在Deployment policy中选择Allow redeploy，如下图所示
+
+<div style="width:780px;height:450px;margin:50px auto">
+    <img alt="nexus-r.png" src="/images/nexus-r.png" width="780" height="450"/>
+</div>
+
