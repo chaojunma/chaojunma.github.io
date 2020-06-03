@@ -12,7 +12,6 @@ gitlab就相当于我们自己内网搭建的git服务，相当于公司内的gi
 ### 拉取镜像
 
 ```
-# gitlab-ce为稳定版本，后面不填写版本则默认pull最新latest版本
 docker pull gitlab/gitlab-ce
 ```
 
