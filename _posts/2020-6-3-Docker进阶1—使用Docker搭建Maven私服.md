@@ -60,8 +60,8 @@ Started Sonatype Nexus OSS 3.23.0-03
 docker exec -it 容器名称 (或者容器ID) /bin/bash
 ```
 
-<div style="width:780px;height:170px;margin:50px auto">
-    <img alt="nexus-exec.png" src="/images/nexus-exec.png" width="780" height="170"/>
+<div style="width:780px;height:150px;margin:50px auto">
+    <img alt="nexus-exec.png" src="/images/nexus-exec.png" width="780" height="150"/>
 </div>
 
 进入容器后，找到admin.password ，查看并复制密码。
@@ -69,8 +69,8 @@ docker exec -it 容器名称 (或者容器ID) /bin/bash
 注意密码只有这一部分：3694698d-5766-490f-b9b9-b72f217b15a5，紧跟后面的 bash-4.4$ 不是密码内容
 
 （5）退出容器
-<div style="width:780px;height:280px;margin:50px auto">
-    <img alt="nexus-exit.png" src="/images/nexus-exit.png" width="780" height="280"/>
+<div style="width:780px;height:250px;margin:50px auto">
+    <img alt="nexus-exit.png" src="/images/nexus-exit.png" width="780" height="250"/>
 </div>
 
 （6）登陆，输入密码：
@@ -94,18 +94,13 @@ docker exec -it 容器名称 (或者容器ID) /bin/bash
 在本地Maven配置文件settings.xml中，添加如下内容：
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-      <server>
-        <id>releases</id>
-        <username>admin</username>
-        <password>admin123</password>
-      </server>
-    </servers>
-</settings>
+<servers>
+  <server>
+    <id>releases</id>
+    <username>admin</username>
+    <password>admin123</password>
+  </server>
+</servers>
 ```
 
 使用IDEA创建一个Maven项目：
