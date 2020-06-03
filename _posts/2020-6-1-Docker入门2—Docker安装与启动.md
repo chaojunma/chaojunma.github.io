@@ -48,6 +48,9 @@ vi /etc/docker/daemon.json
 "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"]
 }
 ```
+
+Docker 官方提供的国内镜像源：[https://registry.docker-cn.com][1] 
+
 ### Docker的启动与停止
 systemctl命令是系统服务管理器指令
 
