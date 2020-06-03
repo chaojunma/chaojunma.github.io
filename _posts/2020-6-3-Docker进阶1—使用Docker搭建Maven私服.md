@@ -110,89 +110,17 @@ docker exec -it 容器名称 (或者容器ID) /bin/bash
 
 使用IDEA创建一个Maven项目：
 
-pop.xml配置文件如下：
+在pop.xml配置文件中添加如下配置：
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.mk</groupId>
-    <artifactId>sso-sdk</artifactId>
-    <version>1.0-RELEASE</version>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-        <servlet-api.version>3.1.0</servlet-api.version>
-        <commons-lang.version>2.6</commons-lang.version>
-        <lombok.version>1.18.0</lombok.version>
-        <fastjson.version>1.2.60</fastjson.version>
-        <mybatis-plus.version>3.1.1</mybatis-plus.version>
-    </properties>
-
-
-    <!--指定仓库地址-->
-    <distributionManagement>
-        <repository>
-            <!--此名称要和maven/settings.xml中设置的ID一致-->
-            <id>releases</id>
-            <url>http://192.168.192.10:8081/repository/next-release/</url>
-        </repository>
-    </distributionManagement>
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.4.RELEASE</version>
-    </parent>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet-api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>${commons-lang.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
-        </dependency>
-        <!-- mybatis-plus依赖 -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
-    </dependencies>
-</project>
+<!--指定仓库地址-->
+<distributionManagement>
+    <repository>
+        <!--此名称要和maven/settings.xml中设置的ID一致-->
+        <id>releases</id>
+        <url>http://192.168.192.10:8081/repository/next-release/</url>
+    </repository>
+</distributionManagement>
 ```
 接下来通过执行`mvn deploy`命令发布到Maven私服，如下便说明发布成功
 
@@ -224,7 +152,7 @@ Uploaded to releases: http://192.168.192.10:8081/repository/next-release/com/mk/
 
 如其他项目需要依赖上面的jar包，可以在pom.xml配置文件中添加如下配置
 
-```
+```xml
 <dependencies>
     <dependency>
       <groupId>com.mk</groupId>
