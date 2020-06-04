@@ -68,8 +68,14 @@ cat /var/jenkins_home/secrets/initialAdminPassword
     <img alt="jenkins-rm.png" src="/images/jenkins-rm.png" width="780" height="410"/>
 </div>
 
-然后Jenkins就会自动安装一些插件，这个过程需要一段时间
+然后Jenkins就会自动安装一些插件，这个过程比较漫长，插件安装完成以后会到以下页面
 
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-u.png" src="/images/jenkins-u.png" width="780" height="410"/>
+</div>
 
+根据表单填写信息之后就结束了,会跳转到jenkins主页，如下：
 
-
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-home.png" src="/images/jenkins-home.png" width="780" height="410"/>
+</div>
