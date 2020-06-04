@@ -79,3 +79,37 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 <div style="width:780px;height:410px;margin:50px auto">
     <img alt="jenkins-home.png" src="/images/jenkins-home.png" width="780" height="410"/>
 </div>
+
+
+### 全局工具配置
+
+#### JDK配置
+
+首先通过以下命令查找到jdk的安装路径
+
+```
+echo $JAVA_HOME
+```
+
+然后在jenkins全局工具配置中配置如下：
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-jdk.png" src="/images/jenkins-jdk.png" width="780" height="410"/>
+</div>
+
+#### Maven配置
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-maven.png" src="/images/jenkins-maven.png" width="780" height="410"/>
+</div>
+
+然后点击保存完成配置
+
+### 安装Maven插件
+
+接下来需要安装Maven插件，因为jenkins默认不支持maven项目的自动化部署，找到 “系统管理“ - “安装插件” ，点击 “可选插件”，找到如下maven插件的版本，插件名称 Maven Integration，如下：
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-plugin.png" src="/images/jenkins-plugin.png" width="780" height="410"/>
+</div>
+
