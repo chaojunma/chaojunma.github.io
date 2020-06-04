@@ -113,3 +113,29 @@ echo $JAVA_HOME
     <img alt="jenkins-plugin.png" src="/images/jenkins-plugin.png" width="780" height="410"/>
 </div>
 
+### jenkins部署SpringBoot项目
+
+（1）发布一个任务，如下：
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-sso.png" src="/images/jenkins-sso.png" width="780" height="410"/>
+</div>
+
+（2）配置git地址及账号，如下：
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-git.png" src="/images/jenkins-git.png" width="780" height="410"/>
+</div>
+
+（3）配置maven打包命令，如下：
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-mvn.png" src="/images/jenkins-mvn.png" width="780" height="410"/>
+</div>
+（4）配置完成，点击立即构建即可，如下：
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-build.png" src="/images/jenkins-build.png" width="780" height="410"/>
+</div>
+
+第一次构建会比较慢，因为需要下载相关的依赖（jar包）
