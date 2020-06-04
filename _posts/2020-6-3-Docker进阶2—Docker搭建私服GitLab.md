@@ -45,7 +45,8 @@ vim /mnt/gitlab/etc/gitlab.rb
 ```
 
 ```
-external_url 'http://192.168.192.10'
+# 配置http协议所使用的访问地址,不加端口号默认为80
+external_url 'http://192.168.192.10:8090'
 ```
 
 修改/mnt/gitlab/data/gitlab-rails/etc/gitlab.yml
