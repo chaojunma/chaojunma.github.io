@@ -9,8 +9,8 @@ tags: Docker Git
 
 作者在Docker笔记（持续更新）提到如何在Docker中安装GitLab，在此存在一个坑，作者觉得很有必要单开一篇文章单独将（希望让其他小伙伴能够通过标题搜到这篇文章，减少弯路）想必看到这篇文章的伙伴存在一个疑惑，为什么我在external_url设置ip+port却无法访问到GitLab，如果直接设置成ip地址在项目的checkout地址一栏，其git地址却不包含端口号，导致http的checkout地址不可用。
 
-<div style="width:780px;height:450px;margin:50px auto">
-    <img alt="docker-gitlab.webp" src="/images/docker-gitlab.webp" width="780" height="450"/>
+<div style="width:780px;height:370px;margin:50px auto">
+    <img alt="docker-gitlab.webp" src="/images/docker-gitlab.webp" width="780" height="370"/>
 </div>
 
 问题的原因就出在external_url地址设置上。
