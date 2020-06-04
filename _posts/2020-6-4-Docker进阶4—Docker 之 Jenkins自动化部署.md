@@ -46,8 +46,8 @@ docker logs -f 容器名称(或者容器ID)
 
 容器启动完成在浏览器访问 [http://192.168.192.10:8080]（http://192.168.192.10:8080） 如下图所示：
 
-<div style="width:780px;height:450px;margin:50px auto">
-    <img alt="jenkins.png" src="/images/jenkins.png" width="780" height="450"/>
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins.png" src="/images/jenkins.png" width="780" height="410"/>
 </div>
 
 页面提示需要在`/var/jenkins_home/secrets/initialAdminPassword`目录下获取解锁密码
@@ -64,8 +64,8 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 然后将看到的一些列字符串解锁密码复制到页面的下面，继续就可以了，然后就来到如下页面
 
-<div style="width:780px;height:450px;margin:50px auto">
-    <img alt="jenkins-rm.png" src="/images/jenkins-rm.png" width="780" height="450"/>
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-rm.png" src="/images/jenkins-rm.png" width="780" height="410"/>
 </div>
 
 然后Jenkins就会自动安装一些插件，这个过程需要一段时间
