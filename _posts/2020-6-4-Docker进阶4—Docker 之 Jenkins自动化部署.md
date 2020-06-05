@@ -138,4 +138,8 @@ echo $JAVA_HOME
     <img alt="jenkins-build.png" src="/images/jenkins-build.png" width="780" height="410"/>
 </div>
 
-第一次构建会比较慢，因为需要下载相关的依赖（jar包）
+第一次构建会比较慢，因为需要下载相关的依赖（jar包）,看到以下内容说明项目构建成功
+
+<div style="width:780px;height:410px;margin:50px auto">
+    <img alt="jenkins-bs.png" src="/images/jenkins-bs.png" width="780" height="410"/>
+</div>
