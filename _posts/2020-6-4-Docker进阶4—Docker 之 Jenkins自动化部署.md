@@ -118,7 +118,7 @@ echo $JAVA_HOME
 （1）发布一个任务，如下：
 
 <div style="width:780px;height:410px;margin:50px auto">
-    <img alt="jenkins-sso.png" src="/images/jenkins-sso.png" width="780" height="410"/>
+    <img alt="jenkins-st.png" src="/images/jenkins-st.png" width="780" height="410"/>
 </div>
 
 （2）配置git地址及账号，如下：
