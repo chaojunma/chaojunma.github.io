@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins连接gitlab，提示returned status code 128解决办法"
+title: "Jenkins连接gitlab提示returned status code 128解决办法"
 date: 2020-6-8
 categories: 运维
 tags: Jenkins Git
