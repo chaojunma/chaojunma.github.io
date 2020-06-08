@@ -36,14 +36,14 @@ tags: Jenkins Git
 2、添加个人访问令牌：
 
  <div style="width:780px;height:410px;margin:50px auto">
-    <img alt="gitlab-token.png" src="/images/gitlab-token.pn" width="780" height="410"/>
+    <img alt="gitlab-token.png" src="/images/gitlab-token.png" width="780" height="410"/>
 </div>
  
 
 3、点击创建后，提示个人令牌，一定要先保存好，一刷新页面就没了
 
-<div style="width:780px;height:410px;margin:50px auto">
-    <img alt="gitlab-t.png" src="/images/gitlab-t.png" width="780" height="410"/>
+<div style="width:750px;height:230px;margin:50px auto">
+    <img alt="gitlab-t.png" src="/images/gitlab-t.png" width="750" height="230"/>
 </div>
  
 
