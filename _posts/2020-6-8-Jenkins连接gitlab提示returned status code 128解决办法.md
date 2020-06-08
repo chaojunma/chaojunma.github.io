@@ -42,15 +42,15 @@ tags: Jenkins Git
 
 3、点击创建后，提示个人令牌，一定要先保存好，一刷新页面就没了
 
-<div style="width:750px;height:230px;margin:50px auto">
-    <img alt="gitlab-t.png" src="/images/gitlab-t.png" width="750" height="230"/>
+<div style="width:750px;height:320px;margin:50px auto">
+    <img alt="gitlab-t.png" src="/images/gitlab-t.png" width="750" height="320"/>
 </div>
  
 
 这里可以撤销，删除token，如果该token已经关联到Jenkins，要删除该token，要连带删除Jenkins里的GitLab API token，否则Jenkins里的GitLab API token失效不能用
 
- <div style="width:780px;height:410px;margin:50px auto">
-    <img alt="token.png" src="/images/token.png" width="780" height="410"/>
+ <div style="width:700px;height:210px;margin:50px auto">
+    <img alt="token.png" src="/images/token.png" width="700" height="210"/>
 </div>
 
 
