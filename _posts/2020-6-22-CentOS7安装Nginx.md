@@ -17,8 +17,8 @@ gcc是linux下的编译器在此不多做解释，感兴趣的小伙伴可以去
 gcc -v
 ```
 
-<div style="width:780px;height:210px;margin:50px auto">
-    <img alt="gcc.png" src="/images/gcc.png" width="780" height="210"/>
+<div style="width:780px;height:250px;margin:50px auto">
+    <img alt="gcc.png" src="/images/gcc.png" width="780" height="250"/>
 </div>
 
 
@@ -95,8 +95,8 @@ make install
 
 6、配置nginx的配置文件nginx.conf文件，主要也就是端口
 
-<div style="width:773px;height:427px;margin:50px auto">
-    <img alt="nginx-p.png" src="/images/nginx-p.png" width="773" height="427"/>
+<div style="width:773px;height:450px;margin:50px auto">
+    <img alt="nginx-p.png" src="/images/nginx-p.png" width="773" height="450"/>
 </div>
 
 
@@ -147,8 +147,8 @@ firewall-cmd --reload
 10、访问你的服务器IP
 显示
 
-<div style="width:780px;height:410px;margin:50px auto">
-    <img alt="nginx-w.png" src="/images/nginx-w.png" width="780" height="410"/>
+<div style="width:780px;height:450px;margin:50px auto">
+    <img alt="nginx-w.png" src="/images/nginx-w.png" width="780" height="450"/>
 </div>
 
 说明安装和配置都没问题OK了
