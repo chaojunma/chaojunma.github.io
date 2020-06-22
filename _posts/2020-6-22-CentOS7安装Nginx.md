@@ -134,8 +134,8 @@ firewall-cmd --list-all
 设置开放的端口号
 
 ```
-firewall-cmd --add-service=http --permanent
-firewall-cmd --add-port=80/tcp --permanent
+firewall-cmd --add-service=http --permanent  #永久开放http
+firewall-cmd --add-port=80/tcp --permanent   #永久开放80端口
 ```
 
 重启防火墙
