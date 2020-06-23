@@ -25,7 +25,21 @@ test!!!!!!!
 
 4、在tomcat目录的ROOT目录下创建test.jsp文件，内容如下：
 
-```
+```jsp
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<HTML>
+    <HEAD>
+        <TITLE>JSP Page</TITLE>
+    </HEAD>
+    <BODY>
+        <%
+            Random rand = new Random();
+            out.println("<h1>随机数:<h1>");
+            out.println(rand.nextInt(99)+100);
+        %>
+    </BODY>
+ </HTML>
+
 ```
 
 
@@ -35,9 +49,11 @@ test!!!!!!!
 
 切换到/usr/local/nginx/conf目录下，通过`vim`命令编辑`nginx.conf`文件，如下：
 
-<div style="width:780px;height:200px;margin:50px auto">
-    <img alt="nginx-static.png" src="/images/nginx-static.png" width="780" height="200"/>
+<div style="width:780px;height:280px;margin:50px auto">
+    <img alt="nginx-static.png" src="/images/nginx-static.png" width="780" height="280"/>
 </div>
+
+
 
 ```shell
 location  ~(.*)(\.jpg|\.png|\.gif|\.jepg|\.css|\.css|\.html) {
@@ -73,7 +89,7 @@ location ~ \.jsp {
 
 在本地浏览器中访问[http://192.168.192.10/index.html](http://192.168.192.10/index.html)  返回结果如下：
 
-<div style="width:780px;height:200px;margin:50px auto">
-    <img alt="nginx-static-jsp.png" src="/images/nginx-static-jsp.png" width="780" height="200"/>
+<div style="width:780px;height:250px;margin:50px auto">
+    <img alt="nginx-static-jsp.png" src="/images/nginx-static-jsp.png" width="780" height="250"/>
 </div>
 
