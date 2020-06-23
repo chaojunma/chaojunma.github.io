@@ -25,7 +25,7 @@ test!!!!!!!
 
 4、在tomcat目录的ROOT目录下创建test.jsp文件，内容如下：
 
-```jsp
+```html
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <HTML>
     <HEAD>
