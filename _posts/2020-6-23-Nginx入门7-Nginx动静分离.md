@@ -27,18 +27,18 @@ test!!!!!!!
 
 ```html
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<HTML>
-    <HEAD>
-        <TITLE>JSP Page</TITLE>
-    </HEAD>
-    <BODY>
+<html>
+    <head>
+        <title>JSP Page</title>
+    </head>
+    <body>
         <%
             Random rand = new Random();
             out.println("<h1>随机数:<h1>");
             out.println(rand.nextInt(99)+100);
         %>
-    </BODY>
- </HTML>
+    </body>
+ </html>
 
 ```
 
