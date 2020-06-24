@@ -34,14 +34,14 @@ Keepalived 以 VRRP 协议为实现基础，用 VRRP 协议来实现高可用性
 
 3、在192.168.192.10服务器上修改Nginx的配置文件nginx.conf如下:
 
-<div style="width:780px;height:250px;margin:50px auto">
-    <img alt="nginx-kl1.png" src="/images/nginx-kl1.png" width="780" height="250"/>
+<div style="width:780px;height:350px;margin:50px auto">
+    <img alt="nginx-kl1.png" src="/images/nginx-kl1.png" width="780" height="350"/>
 </div>
 
 4、在192.168.192.11服务器上修改Nginx的配置文件nginx.conf如下:
 
-<div style="width:780px;height:250px;margin:50px auto">
-    <img alt="nginx-kl2.png" src="/images/nginx-kl2.png" width="780" height="250"/>
+<div style="width:780px;height:350px;margin:50px auto">
+    <img alt="nginx-kl2.png" src="/images/nginx-kl2.png" width="780" height="350"/>
 </div>
 
 5、在两台linux服务器安装Keepalived，安装命令如下：
@@ -157,12 +157,12 @@ service keepalived start
 
 在本地浏览器访问[http://192.168.192.130/weight](http://192.168.192.130/weight)轮询出现以下内容:
 
-<div style="width:780px;height:250px;margin:50px auto">
-    <img alt="keepalived-w1.png" src="/images/keepalived-w1.png" width="780" height="250"/>
+<div style="width:780px;height:300px;margin:50px auto">
+    <img alt="keepalived-w1.png" src="/images/keepalived-w1.png" width="780" height="300"/>
 </div>
 
-<div style="width:780px;height:250px;margin:50px auto">
-    <img alt="keepalived-w2.png" src="/images/keepalived-w2.png" width="780" height="250"/>
+<div style="width:780px;height:300px;margin:50px auto">
+    <img alt="keepalived-w2.png" src="/images/keepalived-w2.png" width="780" height="300"/>
 </div>
 
 说明我们的配置生效了
