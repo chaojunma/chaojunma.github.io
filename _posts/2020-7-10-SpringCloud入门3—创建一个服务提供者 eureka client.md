@@ -85,3 +85,5 @@ eureka:
 ```
 hello, xiaoming, 我是服务提供者:端口为：8080
 ```
+
+本文代码git地址[https://gitee.com/xmingtx/springcloud-lesson.git](https://gitee.com/xmingtx/springcloud-lesson.git)

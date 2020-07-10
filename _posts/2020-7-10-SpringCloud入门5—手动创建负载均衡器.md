@@ -77,3 +77,5 @@ hello, xiaoming, 我是服务提供者:端口为：8081
 ```
 
 将消费者服务中改为随机模式调用，生产者服务则被随机调到。
+
+本文代码git地址[https://gitee.com/xmingtx/springcloud-lesson.git](https://gitee.com/xmingtx/springcloud-lesson.git)

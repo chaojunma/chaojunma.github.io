@@ -111,3 +111,6 @@ eureka:
 <div style="width:780px;height:384px;margin:50px auto">
     <img alt="eureka1.png" src="/images/eureka1.png" width="780" height="384"/>
 </div>
+
+
+本文代码git地址[https://gitee.com/xmingtx/springcloud-lesson.git](https://gitee.com/xmingtx/springcloud-lesson.git)
