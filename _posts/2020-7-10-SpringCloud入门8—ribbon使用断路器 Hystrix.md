@@ -12,7 +12,7 @@ tags: SpringCloud Hystrix
 为了解决这个问题，业界提出了断路器模型。
 
 <div style="width:580px;height:464px;margin:50px 10px;">
-    <img alt="eureka.png" src="/images/eureka.png" width="580" height="464"/>
+    <img alt="Hystrix.png" src="/images/Hystrix.png" width="580" height="464"/>
 </div>
 
 
