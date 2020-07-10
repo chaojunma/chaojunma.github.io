@@ -95,3 +95,5 @@ public class HelloController {
 ```
 hello, xiaoming, 我是服务提供者:端口为：8080
 ```
+
+说明通过消费者调用服务提供者的服务调用成功了
