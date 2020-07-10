@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Cloud Config 构建 client 端"
+title: "Spring Cloud Config 构建client端"
 date: 2020-7-11
 categories: 微服务 分布式
 tags: SpringCloud
