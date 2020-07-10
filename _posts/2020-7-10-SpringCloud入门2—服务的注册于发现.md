@@ -8,8 +8,8 @@ tags: SpringCloud Eureka
 
 Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理(服务注册于发现)模块，如下图：
 
-<div style="width:780px;height:564px;margin:50px auto">
-    <img alt="eureka.png" src="/images/eureka.png" width="780" height="564"/>
+<div style="width:580px;height:464px;margin:50px auto">
+    <img alt="eureka.png" src="/images/eureka.png" width="580" height="464"/>
 </div>
 
 **创建Eureka注册中心**
@@ -108,6 +108,6 @@ eureka:
 
 启动工程,打开浏览器访问：[http://localhost:8761](http://localhost:8761) ,界面如下：
 
-<div style="width:780px;height:564px;margin:50px auto">
-    <img alt="eureka1.png" src="/images/eureka1.png" width="780" height="564"/>
+<div style="width:780px;height:384px;margin:50px auto">
+    <img alt="eureka1.png" src="/images/eureka1.png" width="780" height="384"/>
 </div>
