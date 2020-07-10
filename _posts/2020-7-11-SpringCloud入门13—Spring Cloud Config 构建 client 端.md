@@ -77,8 +77,8 @@ hello,zhangsan
 
 这就说明，config-client从config-server获取了user.name的属性，而config-server是从git仓库读取的,如图：
 
-<div style="width:400px;height:300px;margin:50px 0px;">
-    <img alt="git-config.png" src="/images/git-config.png" width="400" height="300"/>
+<div style="width:400px;height:350px;margin:50px auto;">
+    <img alt="git-config.png" src="/images/git-config.png" width="400" height="350"/>
 </div>
 
 
