@@ -75,8 +75,8 @@ Spring Cloud Config 有它的一套访问规则，我们通过这套规则在浏
 
 通过访问以上地址，如果可以正常返回数据，则说明配置中心服务端一切正常。如下：
 
-<div style="width:580px;height:464px;margin:50px 10px;">
-    <img alt="config.png" src="/images/config.png" width="580" height="464"/>
+<div style="width:780px;height:264px;margin:50px 0px;">
+    <img alt="config.png" src="/images/config.png" width="780" height="264"/>
 </div>
 
 本文代码git地址 [https://gitee.com/xmingtx/springcloud-lesson.git](https://gitee.com/xmingtx/springcloud-lesson.git)
