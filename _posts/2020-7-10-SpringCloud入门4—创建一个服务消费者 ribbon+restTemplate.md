@@ -65,7 +65,7 @@ public class ConsumerApplication {
 
 创建HelloControler，代码如下：
 
-```
+```java
 @RestController
 public class HelloController {
 
