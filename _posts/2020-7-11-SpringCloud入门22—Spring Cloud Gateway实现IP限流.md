@@ -145,8 +145,8 @@ public class IpLimitFilter implements GlobalFilter, Ordered {
 
 控制台信息如下：
 
-<div style="width:780px;height:300px;margin:50px auto;">
-    <img alt="console.png" src="/images/console.png" width="780" height="300"/>
+<div style="width:780px;height:185px;margin:50px auto;">
+    <img alt="console.png" src="/images/console.png" width="780" height="185"/>
 </div>
 
 说明IP限流此时生效了
