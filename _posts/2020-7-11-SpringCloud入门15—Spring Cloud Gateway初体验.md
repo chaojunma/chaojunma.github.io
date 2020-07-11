@@ -33,7 +33,7 @@ spring:
 
 创建启动类如下：
 
-```
+```java
 @SpringBootApplication
 public class GatewayApplication {
 
@@ -45,7 +45,7 @@ public class GatewayApplication {
 
 创建网关配置如下：
 
-```
+```java
 @Configuration
 public class GatewayConfig {
 
@@ -63,8 +63,8 @@ public class GatewayConfig {
 
 在浏览器访问[http://localhost/baidu](http://localhost/baidu)会转发到百度，如下：
 
-<div style="width:780px;height:350px;margin:50px auto;">
-    <img alt="baidu.png" src="/images/baidu.png" width="780" height="350"/>
+<div style="width:780px;height:500px;margin:50px auto;">
+    <img alt="baidu.png" src="/images/baidu.png" width="780" height="500"/>
 </div>
 
 
