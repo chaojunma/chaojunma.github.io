@@ -26,7 +26,11 @@ spring:
 ```
 
 
-在浏览器访问[http://localhost/baidu](http://localhost/baidu)会转发到百度，和之前通过配置方式配置路由实现的效果一样
+在浏览器访问[http://localhost/baidu](http://localhost/baidu)会转发到百度，和之前通过注解方式配置路由实现的效果一样
+
+<div style="width:780px;height:500px;margin:50px auto;">
+    <img alt="baidu.png" src="/images/baidu.png" width="780" height="500"/>
+</div>
 
 
 
