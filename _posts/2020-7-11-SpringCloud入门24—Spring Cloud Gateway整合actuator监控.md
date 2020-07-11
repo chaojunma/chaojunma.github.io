@@ -31,8 +31,8 @@ management:
 
 重启service-gateway服务，在浏览器访问[http://localhost/actuator/gateway/routes](http://localhost/actuator/gateway/routes)，返回网关配置的路由信息，如下：
 
-<div style="width:780px;height:150px;margin:50px auto;">
-    <img alt="actuator.png" src="/images/actuator.png" width="780" height="150"/>
+<div style="width:780px;height:180px;margin:50px auto;">
+    <img alt="actuator.png" src="/images/actuator.png" width="780" height="180"/>
 </div>
 
 
