@@ -67,7 +67,7 @@ spring:
 </div>
 
 
-2. RemoveRequestHeader 过滤器工厂
+**2. RemoveRequestHeader 过滤器工厂**
 
 RemoveRequestHeader 是移除请求头的过滤器工厂，可以在请求转发到后端服务之前进行 Header 的移除操作。
 
