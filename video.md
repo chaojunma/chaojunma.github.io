@@ -19,6 +19,16 @@ permalink: /video/
  	<image class="imgPic" src="/images/jfinal.jpg"/>
 	<a href="https://ke.qq.com/course/2805647?tuin=a3e3fb1">JFinal极速开发之从零开始</a>
  </li>
+
+ <li class="img">
+ 	<image class="imgPic" src="/images/jfinal.jpg"/>
+	<a href="https://ke.qq.com/course/2805647?tuin=a3e3fb1">JFinal极速开发之从零开始</a>
+ </li>
+
+ <li class="img">
+ 	<image class="imgPic" src="/images/jfinal.jpg"/>
+	<a href="https://ke.qq.com/course/2805647?tuin=a3e3fb1">JFinal极速开发之从零开始</a>
+ </li>
 </ul>
 
 
