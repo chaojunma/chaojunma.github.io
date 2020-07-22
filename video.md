@@ -15,3 +15,13 @@ permalink: /video/
 
 
 
+<div class="img">
+ <div class="pic f-pr">
+ <img class="imgPic" src="/images/jfinal.jpg" alt="JFinal极速开发之从零开始">
+ </div>
+ <div class="tit">
+ <h3 class="f-thide">JFinal极速开发之从零开始</h3>
+ </div>
+</div>
+
+
