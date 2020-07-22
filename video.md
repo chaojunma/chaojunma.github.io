@@ -14,33 +14,11 @@ permalink: /video/
 </ul>
 
 
-
-<div class="img">
-	 <div class="pic f-pr">
-	 <img class="imgPic" src="/images/jfinal.jpg" alt="JFinal极速开发之从零开始">
-	 </div>
-	 <div class="tit">
-	  <h3 class="f-thide"><a href="https://ke.qq.com/course/429005?tuin=a3e3fb1" JFinal极速开发之从零开始</a></h3>
-	 </div>
-</div>
-
-<div class="img">
-	 <div class="pic f-pr">
-	 <img class="imgPic" src="/images/jfinal.jpg" alt="JFinal极速开发之从零开始">
-	 </div>
-	 <div class="tit">
-	  <h3 class="f-thide"><a href="https://ke.qq.com/course/429005?tuin=a3e3fb1" JFinal极速开发之从零开始</a></h3>
-	 </div>
-</div>
-
-
-<div class="img">
-	 <div class="pic f-pr">
-	 <img class="imgPic" src="/images/jfinal.jpg" alt="JFinal极速开发之从零开始">
-	 </div>
-	 <div class="tit">
-	  <h3 class="f-thide"><a href="https://ke.qq.com/course/429005?tuin=a3e3fb1" JFinal极速开发之从零开始</a></h3>
-	 </div>
-</div>
+<ul>
+ <li class="img">
+ 	<image class="imgPic" src="/images/jfinal.jpg"/>
+	<a href="https://ke.qq.com/course/2805647?tuin=a3e3fb1">JFinal极速开发之从零开始</a>
+ </li>
+</ul>
 
 
