@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "服务网关 Spring Cloud GateWay 熔断、限流、重试"
+title: "服务网关 Spring Cloud Gateway 熔断、限流、重试"
 date: 2020-8-12
 categories: 微服务 分布式
 tags: SpringCloud Gateway Hyxtrix 限流
