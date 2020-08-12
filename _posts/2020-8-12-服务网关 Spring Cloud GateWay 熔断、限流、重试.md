@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Cloud Gateway整合actuator监控"
+title: "服务网关 Spring Cloud GateWay 熔断、限流、重试"
 date: 2020-8-12
 categories: 微服务 分布式
 tags: SpringCloud Gateway Hyxtrix 限流
