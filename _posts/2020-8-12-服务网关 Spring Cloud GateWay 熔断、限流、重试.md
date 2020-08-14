@@ -88,6 +88,7 @@ spring:
           lower-case-service-id: true
           
           
+#histrix超时时间
 hystrix:
   command:
     fallbackcmd:
@@ -95,9 +96,14 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           semaphore:
-            maxConcurrentRequests: 1000
+            maxConcurrentRequests: 2000
           thread:
             timeoutInMilliseconds: 3000
+    default:
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 2000
 ```
 
 hystrix.command.fallbackcmd.execution.isolation.strategy 设置HystrixCommand.run()的隔离策略，有两种选项：
@@ -107,6 +113,9 @@ hystrix.command.fallbackcmd.execution.isolation.strategy 设置HystrixCommand.ru
 
 hystrix.command.fallbackcmd.execution.isolation.semaphore.maxConcurrentRequests 设置最大请求数量， 默认的Hystrix会限制某个请求的最大并发量：默认10，如果超过了这个默认的并发值且开启了fallback，则丢弃剩下的请求直接进入fallback方法
 
+<div style="width:300px;height:200px;margin:50px auto;">
+    <img alt="gateway-hystrix.png" src="gateway-hystrix.png" width="300" height="200"/>
+</div>
 
 
 构建defaultfallback处理器,如下：
