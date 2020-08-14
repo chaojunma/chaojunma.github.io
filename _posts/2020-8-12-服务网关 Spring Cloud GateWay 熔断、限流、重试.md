@@ -114,7 +114,7 @@ hystrix.command.fallbackcmd.execution.isolation.strategy 设置HystrixCommand.ru
 hystrix.command.fallbackcmd.execution.isolation.semaphore.maxConcurrentRequests 设置最大请求数量， 默认的Hystrix会限制某个请求的最大并发量：默认10，如果超过了这个默认的并发值且开启了fallback，则丢弃剩下的请求直接进入fallback方法
 
 <div style="width:300px;height:200px;margin:50px auto;">
-    <img alt="gateway-hystrix.png" src="gateway-hystrix.png" width="300" height="200"/>
+    <img alt="gateway-hystrix.png" src="/images/gateway-hystrix.png" width="300" height="200"/>
 </div>
 
 
