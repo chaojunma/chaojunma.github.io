@@ -21,10 +21,11 @@ public class AccessAuthGatewayFilterFactory extends AbstractGatewayFilterFactory
         super(AccessAuthGatewayFilterFactory.Config.class);
         log.info("Loaded GatewayFilterFactory [AccessAuth]");
     }
-@Override
-public List<String> shortcutFieldOrder() {
-return Arrays.asList("name");
-} 
+
+    @Override
+	public List<String> shortcutFieldOrder() {
+	return Arrays.asList("name");
+    } 
 
     @Override
     public GatewayFilter apply(Config config) {
