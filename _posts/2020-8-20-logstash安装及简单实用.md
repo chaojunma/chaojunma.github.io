@@ -10,7 +10,7 @@ tags: logstash
 
 1、下载Logstash
 
-Logstash. 国内直接从官网（https://www.elastic.co）下载比较困难，需要一些技术手段。这里提供一个国内的镜像下载地址列表[https://mirrors.huaweicloud.com/logstash/](https://mirrors.huaweicloud.com/logstash/)，方便网友下载。
+Logstash. 国内直接从官网 [https://www.elastic.co](https://www.elastic.co) 下载比较困难，需要一些技术手段。这里提供一个国内的镜像下载地址列表 [https://mirrors.huaweicloud.com/logstash/](https://mirrors.huaweicloud.com/logstash/)，方便网友下载。
 
 本人是从本地上传到服务器上的，使用的是5.4.2
 
@@ -38,8 +38,8 @@ bin/logstash -e 'input { stdin { } } output { stdout {} }'
 
 启动 Logstash 后，再键入 Hello World，结果如下：
 
-<div style="width:700px;height:250px;margin:50px auto;">
-    <img alt="logstash.png" src="/images/logstash.png" width="700" height="250"/>
+<div style="width:780px;height:230px;margin:50px auto;">
+    <img alt="logstash.png" src="/images/logstash.png" width="780" height="230"/>
 </div>
 
 ### Logstash与SpringBoot项目整合
@@ -133,7 +133,7 @@ bin/logstash -f logstash.conf
 
 6、在浏览器中调用test接口，logstash控制台显示如下：
 
-<div style="width:700px;height:250px;margin:50px auto;">
-    <img alt="logstash-log.png" src="/images/logstash-log.png" width="700" height="250"/>
+<div style="width:780px;height:240px;margin:50px auto;">
+    <img alt="logstash-log.png" src="/images/logstash-log.png" width="780" height="240"/>
 </div>
 
