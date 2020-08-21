@@ -92,8 +92,8 @@ bin/logstash -f logstash.conf
 
 4、在浏览器中调用test接口，logstash控制台显示如下：
 
-<div style="width:780px;height:240px;margin:50px auto;">
-    <img alt="logstash-redis.png" src="/images/logstash-redis.png" width="780" height="240"/>
+<div style="width:780px;height:250px;margin:50px auto;">
+    <img alt="logstash-redis.png" src="/images/logstash-redis.png" width="780" height="250"/>
 </div>
 
 
@@ -140,6 +140,6 @@ private StringRedisTemplate redisTemplate;
 
 删除resources目录下logback.xml文件,重启服务，在浏览器中调用test接口，logstash控制台显示如下：
 
-<div style="width:780px;height:130px;margin:50px auto;">
-    <img alt="logstash-info.png" src="/images/logstash-info.png" width="780" height="130"/>
+<div style="width:780px;height:140px;margin:50px auto;">
+    <img alt="logstash-info.png" src="/images/logstash-info.png" width="780" height="140"/>
 </div>
