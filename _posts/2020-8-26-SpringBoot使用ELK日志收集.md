@@ -3,7 +3,7 @@ layout: post
 title: "SpringBoot使用ELK日志收集"
 date: 2020-8-26
 categories: 后端 运维
-tags: SpringBoot ELK Elasticsearch logstash Kibana
+tags: SpringBoot logstash Kibana Elasticsearch
 --- 
 
 ### Logstash配置
@@ -111,12 +111,12 @@ bin/logstash -f logstash.conf
     <img alt="kibana-index2.png" src="/images/kibana-index2.png" width="780" height="450"/>
 </div>
 
-接下来在浏览器多次调用`test`接口
+接下来在浏览器多次调用test接口
 
 然后进入发现页，选择刚刚的索引，如下所示:
 
 <div style="width:780px;height:450px;margin:50px auto;">
-    <img alt="kibana-find.png" src="/images/find.png" width="780" height="450"/>
+    <img alt="kibana-find.png" src="/images/kibana-find.png" width="780" height="450"/>
 </div>
 
 此时说明日志信息已经存储到Elasticsearch当中，并且可以用过Kibaba实现展示与查询
