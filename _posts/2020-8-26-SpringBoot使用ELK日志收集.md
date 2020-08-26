@@ -55,6 +55,9 @@ bin/logstash -f logstash.conf
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml" />
 
+    <!--从application.yml配置中加载spring.application.name属性-->
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <destination>192.168.192.11:9600</destination>
         <!-- 日志输出编码 -->
