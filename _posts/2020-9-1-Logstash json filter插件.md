@@ -36,10 +36,20 @@ input {
 }
 
 filter {
-      json {
-           source => "message"
+      
+      # 如果message字段中不存在"username"则过滤掉
+      if ("username" not in [message]) {
+         drop {}
       }
+
+      json {
+           source => "message"             #将message字段进行解析
+           skip_on_invalid_json => true    #无效的json则跳过
+           remove_field => ["message"]     #删除message字段
+      }
+
 }
+
 
 output {
     elasticsearch {
