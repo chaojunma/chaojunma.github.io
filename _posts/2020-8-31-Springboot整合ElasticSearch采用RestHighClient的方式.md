@@ -532,4 +532,7 @@ public class IndexController {
 }
 ```
 
+<span style="color:red">注意:使用es存储日志，index按天切割,查询时索引库可以用通配符*,例如用es-*查询所有匹配索引中数据</span>
+
+
 本文代码git地址 [https://github.com/chaojunma/springboot-es.git](https://github.com/chaojunma/springboot-es.git)
