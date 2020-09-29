@@ -43,3 +43,23 @@
 
 <script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
+
+<script src="/js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+	   new tctip({
+		top: '20%',
+		button: {
+		  id: 9,
+		  type: 'zanzhu'
+		},
+		list: [
+		  {
+			type: 'alipay',
+			qrImg: '/images/alipay.jpg'
+		  }, {
+			type: 'wechat',
+			qrImg: '/images/wechat.jpg'
+		  }
+		]
+	  }).init()
+</script>
