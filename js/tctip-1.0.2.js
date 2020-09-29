@@ -2094,16 +2094,6 @@ var Link = function (_BaseDom2) {
     return _this2;
   }
 
-  _createClass(Link, [{
-    key: 'genDom',
-    value: function genDom() {
-      this.createDom(_defineProperty({
-        href: 'https://github.com/greedying/tctip',
-        target: '_blank'
-      }, _dom.textKey, '了解更多'), 'a');
-    }
-  }]);
-
   return Link;
 }(_baseDom2.default);
 
