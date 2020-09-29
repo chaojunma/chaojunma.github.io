@@ -25,3 +25,23 @@
 	  <div>
 	 </ul>
 </div>
+
+<script src="/js/tctip-1.0.4.min.js"></script>
+<script type="text/javascript">
+	   new tctip({
+		top: '20%',
+		button: {
+		  id: 9,
+		  type: 'zanzhu'
+		},
+		list: [
+		  {
+			type: 'alipay',
+			qrImg: './images/alipay.jpg'
+		  }, {
+			type: 'wechat',
+			qrImg: './images/wechat.jpg'
+		  }
+		]
+	  }).init()
+</script>
