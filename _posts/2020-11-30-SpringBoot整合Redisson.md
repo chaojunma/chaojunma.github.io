@@ -94,6 +94,7 @@ Redisson分布式锁工具类如下：
 @Component
 public class RedissonUtil {
 
+    @Autowired
     private RedissonClient redissonClient;
 
     /**
