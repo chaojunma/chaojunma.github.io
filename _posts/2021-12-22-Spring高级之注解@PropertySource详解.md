@@ -105,6 +105,18 @@ public class SpringConfig {
 
 如果想通过`@PropertySorce`注解加载yaml文件,需要配合自定义PropertySourceFactory实现。
 
+
+***添加依赖***
+
+```xml
+<dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>1.23</version>
+</dependency>
+```
+
+
 ***自定义PropertySourceFactory***
 
 ```java
