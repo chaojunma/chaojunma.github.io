@@ -18,7 +18,7 @@ public abstract class TaskAbstractHandler {
 }
 ```
 
-**定义多个对象分别集成上面的抽象类**
+**定义多个对象分别继承上面的抽象类**
 
 ```java
 @Slf4j
