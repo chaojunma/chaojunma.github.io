@@ -3,7 +3,7 @@ layout: post
 title: "Spring高级之注解@PropertySource详解"
 date: 2020-12-1
 categories: 分布式
-tags: SringBoot
+tags: SpringBoot
 --- 
 
 `@PropertySource`注解用于指定资源文件读取的位置，它不仅能读取properties文件，也能读取xml文件，并且通过YAML解析器，配合自定义PropertySourceFactory实现解析yaml文件
