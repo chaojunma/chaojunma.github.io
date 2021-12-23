@@ -2,8 +2,8 @@
 layout: post
 title: "Spring特殊注入功能(注入Map集合实现策略模式)"
 date: 2021-12-23
-categories: 设计模式
-tags: Spring 策略模式
+categories: 后端
+tags: Spring 设计模式
 --- 
 
 
