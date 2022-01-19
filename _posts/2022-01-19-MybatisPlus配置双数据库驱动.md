@@ -246,7 +246,7 @@ public class DataSourceMethodAspect {
 ```java
 @Configuration
 @MapperScan("com.dms.gateway.api.mapper")
-public class MyBatiesPlusConfig {
+public class MybatisPlusConfig {
 
     /*
      * 分页插件，自动识别数据库类型
