@@ -4,7 +4,7 @@ title: "MybatisPlus配置双数据库驱动"
 date: 2022-01-19
 categories: 微服务 数据库
 
-tags: Mybatis Mysql Postgresql
+tags: Mybatis MySQL Postgresql
 --- 
 
 
