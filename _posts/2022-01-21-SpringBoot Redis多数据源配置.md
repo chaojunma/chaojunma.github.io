@@ -17,7 +17,7 @@ tags:  SpringBoot Redis
 
 **客户端集成**
 
-1. 在pom.xml中添加如下依赖:
+1.在pom.xml中添加如下依赖:
 
 ```xml
 <dependency>
@@ -118,10 +118,10 @@ public class TestController {
 
 6、在浏览器访问/testRedis接口，通过Redis客户端查看数据如下：
 
-<div style="width:780px;height:450px;margin:50px auto;">
-    <img alt="redis-starter1.png" src="/images/redis-starter1.png" width="780" height="450"/>
+<div style="width:780px;height:400px;margin:50px auto;">
+    <img alt="redis-starter1.png" src="/images/redis-starter1.png" width="780" height="400"/>
 </div>
 
-<div style="width:780px;height:450px;margin:50px auto;">
-    <img alt="redis-starter2.png" src="/images/redis-starter2.png" width="780" height="450"/>
+<div style="width:780px;height:400px;margin:50px auto;">
+    <img alt="redis-starter2.png" src="/images/redis-starter2.png" width="780" height="400"/>
 </div>
