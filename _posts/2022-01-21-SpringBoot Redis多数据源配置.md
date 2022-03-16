@@ -40,27 +40,25 @@ dms:
           host: 127.0.0.1
           port: 6379
           database: 1
-          timeout: 2000
+          timeout: 3000
           jedis:
             pool:
               max-wait: 3000
               max-active: 100
               max-idle: 20
               min-idle: 0
-              timeout: 3000
         # 第二个Redis连接
         demo2Redis:
           host: 127.0.0.1
           port: 6379
           database: 2
-          timeout: 2000
+          timeout: 3000
           jedis:
             pool:
               max-wait: 3000
               max-active: 100
               max-idle: 20
               min-idle: 0
-              timeout: 3000
 ```
 3.在启动类上面添加`@EnableDynamicRedis`注解，如下:
 
